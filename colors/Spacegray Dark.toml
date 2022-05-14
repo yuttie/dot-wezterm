@@ -1,6 +1,13 @@
+# Spacegray Dark
 [colors]
 foreground = "#c0c5ce"
 background = "#2b303b"
+cursor_bg = "#c0c5ce"
+cursor_border = "#c0c5ce"
+cursor_fg = "#2b303b"
+selection_bg = "#c0c5ce"
+selection_fg = "#2b303b"
+
 ansi = [
     "#2b303b",
     "#bf616a",
