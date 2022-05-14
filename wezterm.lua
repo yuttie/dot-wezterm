@@ -17,6 +17,7 @@ function my_sans_fonts(params)
 end
 
 return {
+  term = 'wezterm',
   font_size = 7.0,
   font = my_mono_fonts({ weight='DemiBold', style='Normal' }),
   font_rules = {
