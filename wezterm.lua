@@ -18,6 +18,7 @@ end
 
 return {
   term = 'wezterm',
+  cursor_blink_rate = 500,
   font_size = 7.0,
   font = my_mono_fonts({ weight='DemiBold', style='Normal' }),
   font_rules = {
