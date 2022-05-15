@@ -2,7 +2,8 @@ local wezterm = require 'wezterm'
 
 function my_mono_fonts(params)
   return wezterm.font_with_fallback({
-    'VictorMono Nerd Font',
+    'Victor Mono',
+    'Symbols Nerd Font',
     'Noto Color Emoji',
     'IBM Plex Sans JP',
   }, params)
