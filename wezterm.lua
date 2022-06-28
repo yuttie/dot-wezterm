@@ -1,12 +1,38 @@
 local wezterm = require 'wezterm'
 
-function my_mono_fonts(params)
+function map_font_attrs(family, intensity, style)
+  local DEFAULT_INTENSITY = { Normal = 'Regular', Bold = 'Bold' }
+  local DEFAULT_STYLE = { Normal = 'Normal', Italic = 'Italic' }
+  local MAP = {
+    ['Victor Mono'] = {
+      intensity = { Normal = 'DemiBold', Bold = 'Black' },
+      style = { Normal = 'Normal', Italic = 'Oblique' },
+    },
+    ['IBM Plex Sans JP'] = {
+      intensity = { Normal = 'Medium', Bold = 'Bold' },
+      style = { Normal = 'Normal', Italic = 'Normal' },
+    },
+    ['Source Han Sans'] = {
+      intensity = { Normal = 'Medium', Bold = 'Black' },
+      style = { Normal = 'Normal', Italic = 'Normal' },
+    },
+  }
+
+  return {
+    family = family,
+    weight = ((MAP[family] or {})['intensity'] or DEFAULT_INTENSITY)[intensity] or DEFAULT_INTENSITY[intensity],
+    style = ((MAP[family] or {})['style'] or DEFAULT_STYLE)[style] or DEFAULT_STYLE[style],
+  }
+end
+
+function my_mono_fonts(intensity, style)
   return wezterm.font_with_fallback({
-    'Victor Mono',
-    'Symbols Nerd Font',
-    'Noto Color Emoji',
-    'IBM Plex Sans JP',
-  }, params)
+    map_font_attrs('Victor Mono', intensity, style),
+    map_font_attrs('Symbols Nerd Font', intensity, style),
+    map_font_attrs('Noto Color Emoji', intensity, style),
+    map_font_attrs('IBM Plex Sans JP', intensity, style),
+    map_font_attrs('Source Han Sans', intensity, style),
+  })
 end
 
 function my_sans_fonts(params)
@@ -21,20 +47,23 @@ return {
   term = 'wezterm',
   cursor_blink_rate = 500,
   font_size = 8.0,
-  font = my_mono_fonts({ weight='DemiBold', style='Normal' }),
+  font = my_mono_fonts('Normal', 'Normal'),
   font_rules = {
     {
       italic = true,
       intensity = 'Bold',
-      font = my_mono_fonts({ weight='Black', style='Oblique' }),
+      font = my_mono_fonts('Bold', 'Italic'),
     },
     {
       italic = true,
-      font = my_mono_fonts({ weight='DemiBold', style='Oblique' }),
+      font = my_mono_fonts('Normal', 'Italic'),
     },
     {
       intensity = 'Bold',
-      font = my_mono_fonts({ weight='Black', style='Normal' }),
+      font = my_mono_fonts('Bold', 'Normal'),
+    },
+    {
+      font = my_mono_fonts('Normal', 'Normal'),
     },
   },
   line_height = 0.9,
