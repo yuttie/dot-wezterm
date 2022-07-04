@@ -1,0 +1,30 @@
+# Hydrangea
+[colors]
+foreground = "#96a1b9"
+background = "#1b202a"
+cursor_bg = "#d3def7"
+cursor_border = "#d3def7"
+cursor_fg = "#1b202a"
+selection_bg = "#d3def7"
+selection_fg = "#1b202a"
+
+ansi = [
+    "#1b202a",
+    "#a00640",
+    "#608900",
+    "#aabb00",
+    "#346697",
+    "#6d42b3",
+    "#5ad0d0",
+    "#96a1b9",
+]
+brights = [
+    "#4b505d",
+    "#e91e63",
+    "#b4ea38",
+    "#f3ff7a",
+    "#0487d8",
+    "#d0afff",
+    "#91ecec",
+    "#d3def7",
+]
