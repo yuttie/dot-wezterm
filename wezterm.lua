@@ -66,7 +66,7 @@ return {
       font = my_mono_fonts('Normal', 'Normal'),
     },
   },
-  line_height = 0.9,
+  line_height = 1.0,
   harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' },
   freetype_interpreter_version = 40,
   freetype_load_target = "Light",
