@@ -76,7 +76,7 @@ return {
     { key='V', mods='SHIFT|ALT', action=wezterm.action{PasteFrom='Clipboard' }},
   },
   use_ime = true,
-  color_scheme = 'Spacegray Dark',
+  color_scheme = 'Hydrangea',
   window_frame = {
     font_size = 7.0,
     font = my_sans_fonts({ weight='Bold' }),

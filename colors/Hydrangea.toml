@@ -1,6 +1,6 @@
 # Hydrangea
 [colors]
-foreground = "#96a1b9"
+foreground = "#aeb9d2"
 background = "#1b202a"
 cursor_bg = "#d3def7"
 cursor_border = "#d3def7"
@@ -12,19 +12,19 @@ ansi = [
     "#1b202a",
     "#a00640",
     "#608900",
-    "#aabb00",
+    "#c1ce4b",
     "#346697",
     "#6d42b3",
-    "#5ad0d0",
-    "#96a1b9",
+    "#0990b5",
+    "#aeb9d2",
 ]
 brights = [
     "#4b505d",
     "#e91e63",
-    "#b4ea38",
+    "#c4f160",
     "#f3ff7a",
     "#0487d8",
     "#d0afff",
-    "#91ecec",
+    "#9bdffc",
     "#d3def7",
 ]
