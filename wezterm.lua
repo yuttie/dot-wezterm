@@ -71,6 +71,8 @@ return {
   freetype_interpreter_version = 40,
   freetype_load_target = "Light",
   freetype_render_target = "HorizontalLcd",
+  custom_block_glyphs = true,
+  anti_alias_custom_block_glyphs = true,
   keys = {
     { key='c', mods='SHIFT|ALT', action=wezterm.action{CopyTo='Clipboard'} },
     { key='V', mods='SHIFT|ALT', action=wezterm.action{PasteFrom='Clipboard' }},
