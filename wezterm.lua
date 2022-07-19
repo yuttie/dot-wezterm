@@ -82,6 +82,8 @@ return {
     { key = 'PageUp',   mods = 'SHIFT',      action = 'DisableDefaultAssignment' },
     { key = 'Tab',      mods = 'CTRL',       action = 'DisableDefaultAssignment' },
     { key = 'Tab',      mods = 'CTRL|SHIFT', action = 'DisableDefaultAssignment' },
+    { key = 'PageUp',   mods = 'CTRL|SHIFT', action = wezterm.action.ScrollByPage(-1) },
+    { key = 'PageDown', mods = 'CTRL|SHIFT', action = wezterm.action.ScrollByPage(1) },
   },
   use_ime = true,
   color_scheme = 'Hydrangea',
