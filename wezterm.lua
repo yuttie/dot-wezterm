@@ -46,7 +46,7 @@ end
 return {
   term = 'wezterm',
   cursor_blink_rate = 500,
-  font_size = 8.0,
+  font_size = 12.0,
   font = my_mono_fonts('Normal', 'Normal'),
   font_rules = {
     {
@@ -113,7 +113,7 @@ return {
   use_ime = true,
   color_scheme = 'Hydrangea',
   window_frame = {
-    font_size = 8.0,
+    font_size = 12.0,
     font = my_sans_fonts({ weight='Bold' }),
   },
   hide_tab_bar_if_only_one_tab = true,
