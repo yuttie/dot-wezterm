@@ -70,7 +70,6 @@ return {
   harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' },
   freetype_interpreter_version = 40,
   freetype_load_target = "Light",
-  freetype_render_target = "Normal",
   custom_block_glyphs = true,
   anti_alias_custom_block_glyphs = true,
   front_end = 'WebGpu',
