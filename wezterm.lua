@@ -45,10 +45,10 @@ end
 
 return {
   term = 'wezterm',
-  animation_fps = 30,
-  cursor_blink_rate = 500,
-  cursor_blink_ease_in = 'Linear',
-  cursor_blink_ease_out = 'Linear',
+  animation_fps = 60,
+  cursor_blink_rate = 370,
+  cursor_blink_ease_in = 'EaseIn',
+  cursor_blink_ease_out = 'Constant',
   default_cursor_style = 'BlinkingBlock',
   font_size = 14.0,
   font = my_mono_fonts('Normal', 'Normal'),
