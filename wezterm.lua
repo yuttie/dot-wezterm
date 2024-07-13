@@ -117,7 +117,7 @@ return {
     { key = 'f',        mods = 'SUPER',      action = 'DisableDefaultAssignment' },
   },
   use_ime = true,
-  color_scheme = 'Hydrangea',
+  color_scheme = 'HydrangeaBrightNight',
   window_frame = {
     font_size = 14.0,
     font = my_sans_fonts({ weight='Bold' }),
