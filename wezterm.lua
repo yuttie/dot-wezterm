@@ -131,5 +131,5 @@ return {
   },
   adjust_window_size_when_changing_font_size = false,
   window_close_confirmation = "NeverPrompt",
-  max_fps = 120,
+  max_fps = 60,
 }
