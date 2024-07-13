@@ -74,7 +74,7 @@ return {
   custom_block_glyphs = true,
   anti_alias_custom_block_glyphs = true,
   front_end = 'WebGpu',
-  webgpu_power_preference = 'HighPerformance',
+  webgpu_power_preference = 'LowPower',
   keys = {
     { key = 'c',        mods = 'SHIFT|ALT',  action = wezterm.action{ CopyTo = 'Clipboard' } },
     { key = 'V',        mods = 'SHIFT|ALT',  action = wezterm.action{ PasteFrom = 'Clipboard' } },
