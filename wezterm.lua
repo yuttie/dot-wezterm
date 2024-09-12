@@ -31,7 +31,7 @@ function my_mono_fonts(intensity, style)
     map_font_attrs('Noto Color Emoji', intensity, style),
     map_font_attrs('IBM Plex Sans JP', intensity, style),
     map_font_attrs('Source Han Sans', intensity, style),
-    map_font_attrs('Symbols Nerd Font', intensity, style),
+    map_font_attrs('Symbols Nerd Font Mono', intensity, style),
   })
 end
 
