@@ -5,16 +5,8 @@ function map_font_attrs(family, intensity, style)
   local DEFAULT_STYLE = { Normal = 'Normal', Italic = 'Italic' }
   local MAP = {
     ['Victor Mono'] = {
-      intensity = { Normal = 'DemiBold', Bold = 'Black' },
-      style = { Normal = 'Normal', Italic = 'Oblique' },
-    },
-    ['IBM Plex Sans JP'] = {
       intensity = { Normal = 'Medium', Bold = 'Bold' },
-      style = { Normal = 'Normal', Italic = 'Normal' },
-    },
-    ['Source Han Sans'] = {
-      intensity = { Normal = 'Medium', Bold = 'Black' },
-      style = { Normal = 'Normal', Italic = 'Normal' },
+      style = { Normal = 'Normal', Italic = 'Oblique' },
     },
   }
 
